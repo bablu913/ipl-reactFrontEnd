@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTopPlayers } from "../services/api_services";
+import iplImg from "../assets/kohli.jpg"
 
 const TopPlayersPage = () => {
   const [players, setPlayers] = useState([]);
@@ -16,13 +17,13 @@ const TopPlayersPage = () => {
   const renderPlayerDetails = () => {
     return players.map((player) => {
       return (
-        <div className="card m-3">
+        <div className="card m-3" style={{ opacity: 0.8}}>
           <div className="card-body">
             <div className="d-flex justify-content-center border">
               <img
-                src={player.playerImage}
+                src={iplImg}
                 alt="player"
-                style={{ width: "200px", height: "200px" }}
+                style={{ width: "100%", height: "200px" }}
               />
             </div>
             <h5 className="card-title text-center">{player.playerName}</h5>

@@ -21,7 +21,7 @@ const FanEngagementPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" style={{ opacity: 0.8 }}>
       <h1 className="text-center">Fan Engagement Page</h1>
       <h3>Match Details</h3>
       {renderMatchDetails()}

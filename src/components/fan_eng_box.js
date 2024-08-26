@@ -1,3 +1,6 @@
+import csk from '../assets/csk.png';
+import rcb from '../assets/rcb.jpg';
+
 const FanEngagementBox = ({ match }) => {
   return (
     <div className="container m-3" key={match.matchId}>
@@ -6,7 +9,7 @@ const FanEngagementBox = ({ match }) => {
           <div className="row">
             <div className="d-flex justify-content-center border col m-2">
               <img
-                src={match.team1Img}
+                src={csk}
                 alt="player"
                 style={{ width: "200px", height: "200px" }}
               />
@@ -20,9 +23,9 @@ const FanEngagementBox = ({ match }) => {
             </h5>
             <div className="d-flex justify-content-center border col m-2">
               <img
-                src={match.team2Img}
+                src={rcb}
                 alt="player"
-                style={{ width: "200px", height: "200px" }}
+                style={{ width: "100%", height: "200px" }}
               />
             </div>
           </div>

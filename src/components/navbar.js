@@ -10,7 +10,7 @@ const NavbarComponent = () => {
     <Navbar bg="dark" variant="dark" expand="lg">
       <div className="container">
         <Navbar.Brand as={Link} to="/">
-          <img src="logo192.png" width="30" height="30" alt="logo" /> Cricket
+          <img src="logo192.png" width="30" height="30" alt="logo" /> IPL
           App
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav " />
